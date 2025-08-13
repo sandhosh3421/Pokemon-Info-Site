@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pokemon Movies</title>
+	<link rel="icon" href="pokeball.jpeg">
+	<link rel="stylesheet" href="styles3.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#movies *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+    $("#content img").animate({
+    opacity: 1.0
+  }, 2500, function() {
+	// Animation complete.
+  });
+
+  $("#content p").slideDown(2000);
+});
+</script>
+<body>
+	
+	<div id="header">
+		<h1>POKEMON MOVIES</h1>
+	</div>
+
+	<div id="navbar">
+		<ul class="nav">
+			<li><a href="pokemon.html">Home</a></li>
+			<li><a href="pokeseries.html">Series</a></li>
+			<li><a href="pokemovies.html">Movies</a></li>
+			<li><a href="pokegames.html">Games</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<img src="pokemonlogo.jpeg" alt="Pokemon Image">
+		<p><span id="intro">Welcome to the Pokemon Movies!</span><br>Explore the fascinating world of Pokemon movies, where you can watch your favorite characters come to life on the big screen. Experience epic battles and heartwarming stories that will keep you entertained for hours.</p>
+	</div>
+
+	<div id="idbody">
+		<h2>Pokemon Movies Overview</h2>
+		<p>Watch the exciting Pokemon movies that bring your favorite characters to life on the big screen. Experience epic battles and heartwarming stories that will keep you entertained for hours.</p>
+	</div>
+
+	<input type="text" id="myInput" placeholder="Search for movies...">
+
+	<div id="movies">
+		<div>
+			<img src="movies/movie01.jpeg" alt="Movie 1 Image">
+			<p><span>Movie 1:</span><br>Pokemon: The First Movie(1999)</p>
+		</div>
+		<div>
+			<img src="movies/movie02.jpeg" alt="Movie 2 Image">
+			<p><span>Movie 2:</span><br>Pokemon: The Movie 2000(2000)</p>
+		</div>
+		<div>
+			<img src="movies/movie03.jpeg" alt="Movie 3 Image">
+			<p><span>Movie 3:</span><br>Pokemon: The Movie 3(2001)</p>
+		</div>
+		<div>
+			<img src="movies/movie04.jpeg" alt="Movie 4 Image">
+			<p><span>Movie 4:</span><br>Pokemon 4Ever(2002)</p>
+		</div>
+		<div>
+			<img src="movies/movie05.jpeg" alt="Movie 5 Image">
+			<p><span>Movie 5:</span><br>Pokemon Heroes(2003)</p>	
+		</div>
+		<div>	
+			<img src="movies/movie06.jpeg" alt="Movie 6 Image">
+			<p><span>Movie 6:</span><br>Pokemon: Jirachi Wish Maker(2004)</p>	
+		</div>
+		<div>
+			<img src="movies/movie07.jpeg" alt="Movie 7 Image">
+			<p><span>Movie 7:</span><br>Pokemon: Destiny Deoxys(2005)</p>
+		</div>
+		<div>
+			<img src="movies/movie08.jpeg" alt="Movie 8 Image">
+			<p><span>Movie 8:</span><br>Pokemon: Lucario and the Mystery of Mew(2006)</p>
+		</div>
+		<div>
+			<img src="movies/movie09.jpeg" alt="Movie 9 Image">
+			<p><span>Movie 9:</span><br>Pokemon: Ranger and the Temple of the Sea(2007)</p>
+		</div>
+		<div>
+			<img src="movies/movie10.jpeg" alt="Movie 10 Image">
+			<p><span>Movie 10:</span><br>Pokemon: The Rise of Darkrai(2008)</p>
+		</div>
+		<div>
+			<img src="movies/movie11.jpeg" alt="Movie 11 Image">
+			<p><span>Movie 11:</span><br>Pokemon: Giratina and the Sky Warrior(2009)</p>
+		</div>
+		<div>
+			<img src="movies/movie12.jpeg" alt="Movie 12 Image">
+			<p><span>Movie 12:</span><br>Pokemon: Arceus and the Jewel of Life(2009)</p>
+		</div>
+		<div>
+			<img src="movies/movie13.jpeg" alt="Movie 13 Image">
+			<p><span>Movie 13:</span><br>Pokemon: Zoroark: Master of Illusions(2011)</p>
+		</div>
+		<div>
+			<img src="movies/movie14a.jpeg" alt="Movie 14 Image">
+			<p><span>Movie 14:</span><br>Pokemon: White-Victini and Zekrom(2011)</p>
+		</div>
+		<div>
+			<img src="movies/movie14b.jpeg" alt="Movie 15 Image">
+			<p><span>Movie 15:</span><br>Pokemon: Black-Victini and Reshiram(2011)</p>	
+		</div>
+		<div>
+			<img src="movies/movie15.jpeg" alt="Movie 16 Image">
+			<p><span>Movie 16:</span><br>Pokemon: Kyurem vs. the Sword of Justice(2012)</p>	
+		</div>
+		<div>
+			<img src="movies/movie16.jpeg" alt="Movie 17 Image">
+			<p><span>Movie 17:</span><br>Pokemon: Genesect and the Legend Awakened(2013)</p>
+		</div>
+		<div>
+			<img src="movies/movie17.jpeg" alt="Movie 18 Image">
+			<p><span>Movie 18:</span><br>Pokemon: Diancie and the Cocoon of Destruction(2014)</p>
+		</div>
+		<div>
+			<img src="movies/movie18.jpeg" alt="Movie 19 Image">
+			<p><span>Movie 19:</span><br>Pokemon: Hoopa and the Clash of Ages(2015)</p>
+		</div>
+		<div>
+			<img src="movies/movie19.jpeg" alt="Movie 20 Image">
+			<p><span>Movie 20:</span><br>Pokemon: Volcanion and the Mechanical Marvel(2016)</p>
+		</div>
+		<div>
+			<img src="movies/movie20.jpeg" alt="Movie 21 Image">
+			<p><span>Movie 21:</span><br>Pokemon: I Choose You(2017)</p>
+		</div>
+		<div>
+			<img src="movies/movie21.jpeg" alt="Movie 22 Image">
+			<p><span>Movie 22:</span><br>Pokemon: The Power of Us(2018)</p>
+		</div>
+		<div>
+			<img src="movies/movie22.jpeg" alt="Movie 23 Image">
+			<p><span>Movie 23:</span><br>Pokemon: Mewtwo Strikes Back - Evolution(2020)</p>
+		</div>
+		<div>
+			<img src="movies/movie23.jpeg" alt="Movie 24 Image">
+			<p><span>Movie 24:</span><br>Pokemon: Secrets of the Jungle(2021)</p>	
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>© 2023 Pokemon World. All rights reserved.<br>
+		Follow us on:
+			<a href="https://www.facebook.com/pokemon">Facebook</a> |
+			<a href="https://www.twitter.com/pokemon">Twitter</a> |
+			<a href="https://www.instagram.com/pokemon">Instagram</a></p>
+		<p><a href="https://www.pokemon.com">Click here</a> to visit the official Pokemon website for more information and updates.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="pokeball.jpeg">
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+    $("#content img").animate({
+    opacity: 1.0
+  }, 2500, function() {
+	// Animation complete.
+  });
+
+  $("#content p").slideDown(2000);
+});
+</script>
+<body>
+
+  <div id="header">
+    <h1>POKEMON WORLD</h1>
+  </div>
+  <div id="navbar">
+    <ul class="nav">
+      <!-- <li class="select-header"><a href="pokemon.html">Home</a></li> -->
+      <li class=""><a href="pokemon.html">Home</a></li>
+      <li><a href="pokeseries.html">Series</a></li>
+      <li><a href="pokemovies.html">Movies</a></li>
+      <li><a href="pokegames.html">Games</a></li>
+    </div>
+
+    <div id="content">
+      <img src="pokemonlogo.jpeg" alt="Pokemon Image">
+      <p><span id="intro">Welcome to the Pokemon World!</span><br>Explore the fascinating world of Pokemon, where you can catch, train, and battle your favorite creatures. Join trainers from around the globe and embark on your own adventure!</p>
+    </div>
+
+    <div id="idbody">
+      <img src="pokemons.jpeg" alt="Pokemon Image 1">
+      <p><span>History of Pokemons</span><br>Pokémon are creatures, also known as "pocket monsters", that inhabit a world alongside humans. They come in a vast array of species, each with unique designs, abilities, and elemental types. Humans, called Pokémon Trainers, befriend and train these creatures to compete in battles and form strong bonds. The Pokémon world, the setting for the franchise, is a place where humans and Pokémon coexist, with Pokémon living in diverse environments like forests, caves, and oceans. 
+The franchise originated as a pair of video games, Pocket Monsters Red and Green, developed by Game Freak and published by Nintendo in 1996. The concept, created by Satoshi Tajiri, drew inspiration from his childhood hobby of collecting insects. The franchise quickly expanded into a global phenomenon, encompassing animated series, movies, a trading card game, and various other merchandise. 
+Pokémon trainers form teams with their Pokémon and embark on adventures, participating in friendly battles and striving to become the best Pokémon trainer. Each Pokémon has unique strengths and weaknesses based on its type, adding strategic depth to battles. The franchise is known for its diverse cast of characters, including iconic Pokémon like Pikachu, Bulbasaur, and Jigglypuff, and its core message of friendship and teamwork. </p>
+    </div>
+
+    <div id="footer">
+      <p>© 2023 Pokemon World. All rights reserved.<br>
+      Follow us on:
+        <a href="https://www.facebook.com/pokemon">Facebook</a> |
+        <a href="https://www.twitter.com/pokemon">Twitter</a> |
+        <a href="https://www.instagram.com/pokemon">Instagram</a></p>
+      <p><a href="https://www.pokemon.com">Click here</a>to visit the official Pokemon website for more information and updates.</p>
+    </div>
+</body>
+</html>

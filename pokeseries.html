@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pokemon Series</title>
+	<link rel="icon" href="pokeball.jpeg">
+	<link rel="stylesheet" href="styles2.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#series *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+  
+    $("#content img").animate({
+    opacity: 1.0
+  }, 2500, function() {
+	// Animation complete.
+  });
+
+  $("#content p").slideDown(2000);
+});
+</script>
+
+<body>
+	<div id="header">
+		<h1>POKEMON SERIES</h1>
+	</div>
+
+	<div id="navbar">
+		<ul class="nav">
+			<li><a href="pokemon.html">Home</a></li>
+			<li><a href="pokeseries.html">Series</a></li>
+			<li><a href="pokemovies.html">Movies</a></li>
+			<li><a href="pokegames.html">Games</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<img src="pokemonlogo.jpeg" alt="Pokemon Image">
+		<p><span id="intro">Welcome to the Pokemon Series!</span><br>Explore the fascinating world of Pokemon series, The Pokémon animated TV series, known in Japan as Pocket Monsters, follows the adventures of Ash Ketchum, a young boy from Pallet Town, who dreams of becoming a Pokémon Master. He embarks on a journey with his first Pokémon, Pikachu, encountering other trainers, battling Pokémon, and forming friendships along the way. The series, which premiered in 1997, is a globally recognized and successful adaptation of the popular Pokémon video game franchise. While Ash's journey concluded in 2023, the series continues with a new generation of protagonists in Pokémon Horizons: The Series.</p>
+    </div>
+
+	<div id="idbody">
+		<h2>Pokemon Series Overview</h2>
+		<p>Discover the various series of Pokemon, each with its unique storyline and characters. From the original series to the latest adventures, there's always something new to explore.</p>
+	</div>
+
+	<input type="text" id="myInput" placeholder="Search for series...">
+
+	<div id="series">
+		<div>
+			<img src="series/season01.jpeg" alt="Season 1 Image">
+			<p><span>Season 1:</span><br>Indigo League</p>
+		</div>
+		<div>
+			<img src="series/season02.jpeg" alt="Season 2 Image">
+			<p><span>Season 2:</span><br>Adventures on the Orange Islands</p>
+		</div>
+		<div>
+			<img src="series/season03.jpeg" alt="Season 3 Image">
+			<p><span>Season 3:</span><br>The Johto Journeys</p>
+		</div>
+		<div>
+			<img src="series/season04.jpeg" alt="Season 4 Image">
+			<p><span>Season 4:</span><br>The Johto League Champions</p>
+		</div>
+		<div>
+			<img src="series/season05.jpeg" alt="Season 5 Image">
+			<p><span>Season 5:</span><br>Master Quest</p>
+		</div>
+		<div>
+			<img src="series/season06.jpeg" alt="Season 6 Image">
+			<p><span>Season 6:</span><br>Advanced</p>
+		</div>
+		<div>
+			<img src="series/season07.jpeg" alt="Season 7 Image">
+			<p><span>Season 7:</span><br>Advanced Challenge</p>
+		</div>
+		<div>
+			<img src="series/season08.jpeg" alt="Season 8 Image">
+			<p><span>Season 8:</span><br>Advanced Battle</p>
+		</div>
+		<div>
+			<img src="series/season09.jpeg" alt="Season 9 Image">
+			<p><span>Season 9:</span><br>Battle Frontier</p>
+		</div>
+		<div>
+			<img src="series/season10.jpeg" alt="Season 10 Image">
+			<p><span>Season 10:</span><br>Diamond and Pearl</p>
+		</div>
+		<div>
+			<img src="series/season11.jpeg" alt="Season 11 Image">
+			<p><span>Season 11:</span><br>DP Battle Dimension</p>
+		</div>
+		<div>
+			<img src="series/season12.jpeg" alt="Season 12 Image">
+			<p><span>Season 12:</span><br>DP Galactic Battles</p>
+		</div>
+		<div>
+			<img src="series/season13.jpeg" alt="Season 13 Image">
+			<p><span>Season 13:</span><br>DP Sinnoh League Victors</p>
+		</div>
+		<div>
+			<img src="series/season14.jpeg" alt="Season 14 Image">
+			<p><span>Season 14:</span><br>Black & White</p>
+		</div>
+		<div>
+			<img src="series/season15.jpeg" alt="Season 15 Image">
+			<p><span>Season 15:</span><br>BW Rival Destinies</p>
+		</div>
+		<div>
+			<img src="series/season16.jpeg" alt="Season 16 Image">
+			<p><span>Season 16:</span><br>BW Adventures in Unova and Beyond</p>
+		</div>
+		<div>
+			<img src="series/season17.jpeg" alt="Season 17 Image">
+			<p><span>Season 17:</span><br>X and Y</p>
+		</div>
+		<div>
+			<img src="series/season18.jpeg" alt="Season 18 Image">
+			<p><span>Season 18:</span><br>XY Kalos Quest</p>
+		</div>
+		<div>
+			<img src="series/season19.jpeg" alt="Season 19 Image">
+			<p><span>Season 19:</span><br>XYZ</p>
+		</div>
+		<div>
+			<img src="series/season20.jpeg" alt="Season 20 Image">
+			<p><span>Season 20:</span><br>Sun & Moon</p>
+		</div>
+		<div>
+			<img src="series/season21.jpeg" alt="Season 21 Image">
+			<p><span>Season 21:</span><br>Sun & Moon - Ultra Adventures</p>
+		</div>
+		<div>
+			<img src="series/season22.jpeg" alt="Season 22 Image">
+			<p><span>Season 22:</span><br>Sun & Moon - Ultra Legends</p>
+		</div>
+		<div>
+			<img src="series/season23.jpeg" alt="Season 23 Image">
+			<p><span>Season 23:</span><br>The Journeys</p>
+		</div>
+		<div>
+			<img src="series/season24.jpeg" alt="Season 24 Image">
+			<p><span>Season 24:</span><br>Master Journeys</p>
+		</div>
+		<div>
+			<img src="series/season25.jpeg" alt="Season 25 Image">
+			<p><span>Season 25:</span><br>Ultimate Journeys</p>
+		</div>
+		<div>
+			<img src="series/season26.jpeg" alt="Season 26 Image">
+			<p><span>Season 26:</span><br>Pokémon Horizons: The Series</p>
+		</div>
+		<div>
+			<img src="series/season27.jpeg" alt="Season 27 Image">
+			<p><span>Season 27:</span><br>Pokémon Horizons: The Search of Laqua(Coming Soon....)</p>
+		</div>
+	</div>
+
+	<div id="footer">
+			<p>© 2023 Pokemon World. All rights reserved.<br>
+			Follow us on:
+				<a href="https://www.facebook.com/pokemon">Facebook</a> |
+				<a href="https://www.twitter.com/pokemon">Twitter</a> |
+				<a href="https://www.instagram.com/pokemon">Instagram</a></p>
+			<p><a href="https://www.pokemon.com">Click here</a> to visit the official Pokemon website for more information and updates.</p>
+	</div>
+</body>
+</html>
